@@ -1,0 +1,179 @@
+/*Begin your code here*/
+/*Requirement 1*/
+body{
+  font-family: 'Lato', sans-serif;
+  background-color:#ffb997;
+  padding: 0;
+  font-size: 16pt; 
+}
+
+a{
+  font-size: 12pt;
+  color: #621940;
+  text-decoration: none;
+}
+.nav_links{
+  padding-top: 20px;
+  display: flex;
+  flex-basis: auto;
+  justify-content: space-evenly;
+  color: #621940;
+}
+.active-page{
+  font-weight:bold;
+  text-decoration: wavy;
+  font-size: 15pt;
+}
+
+h1{
+  padding-top: 10px;
+  padding-bottom: 20px;
+  font-size: 30pt;
+  color: #0b032d;
+  text-align: center ;
+}
+h2{
+  font-size: 24pt;
+  color: #843b62;
+  text-align: left ;
+  padding-left: 5px;
+}
+
+p{
+  font-size: 15pt;
+  padding-left: 5px;
+  padding-bottom: 5px;
+}
+
+.bloggers{
+  display:grid;
+  grid-template-columns: 1;
+  grid-template-rows:9 ;
+  justify-content: space-around;
+  align-items: center;
+  grid-gap: 40px;
+  padding-top: 20px;
+  
+
+}
+
+#blogpics{
+  /* border: 10px white solid; */
+  /* margin: 10px; */
+  width: 300px;
+  align-items: center;
+}
+
+
+
+footer{
+  background-color: #843b62;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+.sauces{
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: antiquewhite;
+}
+
+
+
+
+#saucepicture, #blogpics {
+  border: 10px white solid;
+  margin: 10px;
+  width: 300px;
+}
+.recipe{
+  grid-column: 2;
+  grid-row: 2;
+  text-align: center;
+}
+ul{
+  font-size: 15px;
+  list-style-type: none;
+}
+ 
+
+
+/* right flip css */
+.post-wrap {
+  width: 320px;
+  height: 500px;
+  /* perspective: 1000px; */
+  justify-items: center;
+  align-items: center;
+}
+.post {
+  position: center; /* Required to absolutely position the child faces */
+  width: 100%;
+  height: 100%;
+  justify-items: center;
+  align-items: center;
+}
+.post-front, .post-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  align-items: center;
+  justify-items: center;
+}
+.post-back {
+  transform: rotateY(180deg);
+}
+.post-front, .post-back {
+  /* Existing styles here */
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.post-front {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* To push the read more button to bottom */
+  align-items: center; /* To position the read more button at the left */
+}
+.post-wrap:hover .post {
+  transform: rotateY(180deg);
+}
+.post {
+  /* Existing styles here */
+  transition: transform 1s;
+  transform-style: preserve-3d;   
+}
+
+form {
+  padding-bottom: 10px;
+  padding-left: 10px;
+  text-align: left;
+}
+/* #form2, #form3{
+  width: 200px;
+  height: 50px; */
+  }
+
+  #form1, #form2, #form3{
+    text-align: left;
+    }
+
+
+
+
+
+@media screen and (min-width: 850px){
+
+ 
+/*Add media query to handle reduced-motion*/
+/*Your code here again.*/ 
+/* @media screen and (prefers-reduced-motion: reduce){
+} */
+
+
+
+/* @media print { 
+} */
