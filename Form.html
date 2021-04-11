@@ -2,8 +2,7 @@
 <html lang="en">
 	<head>
     
-		<!-- CHANGE -->
-		<!-- <link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/> -->
+		
 	
 		<meta charset="utf-8">
 		
@@ -13,14 +12,11 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com">
 			<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap" rel="stylesheet">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<!-- <meta name="viewport" content="width=device-width"> -->
-	
 		
-	
 		<title> submission form</title>
 	  </head>
 <body>
-	<!-- <a class = "skip" href="#main">Skip to Main Content</a> -->
+	<a class = "skip" href="#main">Skip to Main Content</a>
 	<header>
 		<nav>
 		  <ul class="nav_links">
@@ -34,13 +30,14 @@
 	<main>
 		<h1>Suggest your favorite blogger</h1>
 		<p>I'm always looking to hear about more bloggers and try different ideas! Let me know some of you "go-to"s below!</p>
-		<form>
+		<form id=main action= "https://formspree.io/f/xrgrgjnj" method= "POST">
 			<label for="blogger">Blogger Name:</label>
 			<input type="text" id="blogger" name="blogger"><br>
 			<label for="type">What type of blogger are they?</label>
 			<input type="text" id="type" name="type"><br>
 			<label for="recipe">Share some favorite recipes of theirs!</label>
 			<input type="text" id="recipe" name="recipe"><br>
+			<button type="submit">Send</button>
 		  </form>
 	</main>
 	<footer>

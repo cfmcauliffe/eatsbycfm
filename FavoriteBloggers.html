@@ -1,10 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<!-- Include code for favicon image, three stylesheets, Google Font, and responsive meta tags. -->
-		<!-- CHANGE -->
-		<link rel="shortcut icon" type="image/png" href="images/logo_icon.png"/>
-	
+		
 		<meta charset="utf-8">
 		
 		<link rel="stylesheet" type="text/css" href="css/html5reset.css">
@@ -20,7 +17,7 @@
 		<title>Favorite Bloggers</title>
 	</head>
 	<body>
-		<!-- <a class = "skip" href="#main">Skip to Main Content</a> -->
+		<a class = "skip" href="#bloggers">Skip to Main Content</a>
 		<header>
 		  <nav>
 			<ul class="nav_links">
@@ -31,12 +28,13 @@
 			</ul>
 		</nav>
 	  </header>
+	  <main>
 	  <h1 id = "bloggers">My Favorite Bloggers</h1>
         <div class="bloggers">
 			<div class="post-wrap"> <!-- The parent element -->
 				<div class="post"> <!-- Child element that flips -->
 					<div class="post-front">
-						<img id="blogpics" src="images/gatherednutrition.jpg" alt="" />
+						<img class="blogpics" src="images/gatherednutrition.jpg" alt="" />
 					</div>
 					<div class="post-back">
 						<h1> Gathered Nurtition</h1>
@@ -48,10 +46,10 @@
 					</div>
 				</div>
 			 </div>
-			 <div class="post-wrap"> <!-- The parent element -->,
+			 <div class="post-wrap"> <!-- The parent element -->
 				<div class="post"> <!-- Child element that flips -->
 					<div class="post-front">
-						<img id="blogpics" src="images/modernproper.jpg" alt="" />
+						<img class="blogpics" src="images/modernproper.jpg" alt="" />
 					</div>
 					<div class="post-back">
 						<h1> Modern Proper</h1>
@@ -66,7 +64,7 @@
 			 <div class="post-wrap"> <!-- The parent element -->
 				<div class="post"> <!-- Child element that flips -->
 					<div class="post-front">
-						<img id="blogpics" src="images/earthy.jpg" alt="" />
+						<img class="blogpics" src="images/earthy.jpg" alt="" />
 					</div>
 					<div class="post-back">
 						<h1> Earthy Andy</h1>
@@ -81,7 +79,7 @@
 			 <div class="post-wrap"> <!-- The parent element -->
 				<div class="post"> <!-- Child element that flips -->
 					<div class="post-front">
-						<img id="blogpics" src="images/ambitious.jpg" alt="" />
+						<img class="blogpics" src="images/ambitious.jpg" alt="" />
 					</div>
 					<div class="post-back">
 						<h1> Ambitious Kitchen</h1>
@@ -97,7 +95,7 @@
 			 <div class="post-wrap"> <!-- The parent element -->
 				<div class="post"> <!-- Child element that flips -->
 					<div class="post-front">
-						<img id="blogpics" src="images/loveandlemons.jpg" alt="" />
+						<img class="blogpics" src="images/loveandlemons.jpg" alt="" />
 					</div>
 					<div class="post-back">
 						<h1>Love & Lemons</h1>
@@ -112,7 +110,7 @@
 			 <div class="post-wrap"> <!-- The parent element -->
 				<div class="post"> <!-- Child element that flips -->
 					<div class="post-front">
-						<img id="blogpics" src="images/pinch.jpg" alt="" />
+						<img class="blogpics" src="images/pinch.jpg" alt="" />
 					</div>
 					<div class="post-back">
 						<h1>Pinch of Yum</h1>
@@ -126,7 +124,7 @@
 			 <div class="post-wrap"> <!-- The parent element -->
 				<div class="post"> <!-- Child element that flips -->
 					<div class="post-front">
-						<img id="blogpics" src="images/halfbaked.jpg" alt="" />
+						<img class="blogpics" src="images/halfbaked.jpg" alt="" />
 					</div>
 					<div class="post-back">
 						<h1>Half Baked Harvest</h1>
@@ -139,7 +137,7 @@
 			 <div class="post-wrap"> <!-- The parent element -->
 				<div class="post"> <!-- Child element that flips -->
 					<div class="post-front">
-						<img id="blogpics" src="images/gimme.jpg" alt="" />
+						<img class="blogpics" src="images/gimme.jpg" alt="" />
 					</div>
 					<div class="post-back">
 						<h1>Gimme Soe Oven</h1>
@@ -153,7 +151,7 @@
 			 <div class="post-wrap"> <!-- The parent element -->
 				<div class="post"> <!-- Child element that flips -->
 					<div class="post-front">
-						<img id="blogpics" src="images/minimalist.jpg" alt="" />
+						<img class="blogpics" src="images/minimalist.jpg" alt="" />
 					</div>
 					<div class="post-back">
 						<h1>Minimalist Baker</h1>
@@ -167,130 +165,9 @@
 			 </div>
 			  
 
-			<!-- <div class="flip-card">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<img id="blogpics" src="images/gatherednutrition.jpg" alt="" />
-				  </div>
-				  <div class="flip-card-back">
-					<h1>John Doe</h1>
-					<p>Architect & Engineer</p>
-					<p>We love that guy</p>
-				  </div>
-				</div>
-			  </div>
-
-			  <div class="flip-card">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<img id="blogpics" src="images/modernproper.jpg" alt="" />
-				  </div>
-				  <div class="flip-card-back">
-					<h1>John Doe</h1>
-					<p>Architect & Engineer</p>
-					<p>We love that guy</p>
-				  </div>
-				</div>
-			  </div>
-
-			  <div class="flip-card">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<img id="blogpics" src="images/earthy.jpg" alt="" />
-				  </div>
-				  <div class="flip-card-back">
-					<h1>John Doe</h1>
-					<p>Architect & Engineer</p>
-					<p>We love that guy</p>
-				  </div>
-				</div>
-			  </div>
-
-			  <div class="flip-card">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<img id="blogpics" src="images/ambitious.jpg" alt="" />
-				  </div>
-				  <div class="flip-card-back">
-					<h1>John Doe</h1>
-					<p>Architect & Engineer</p>
-					<p>We love that guy</p>
-				  </div>
-				</div>
-			  </div>
-
-			  <div class="flip-card">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<img id="blogpics" src="images/loveandlemons.jpg" alt="" />
-				  </div>
-				</div>
-
-				  <div class="flip-card-back">
-					<h1>John Doe</h1>
-					<p>Architect & Engineer</p>
-					<p>We love that guy</p>
-				  </div>
-			  </div>
-
-
-			  <div class="flip-card">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<img id="blogpics" src="images/pinch.jpg" alt="" />
-				  </div>
-				  <div class="flip-card-back">
-					<h1>John Doe</h1>
-					<p>Architect & Engineer</p>
-					<p>We love that guy</p>
-				  </div>
-				</div>
-			  </div>
-
-
-			  <div class="flip-card">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<img id="blogpics" src="images/halfbaked.jpg" alt="" />
-				  </div>
-				  <div class="flip-card-back">
-					<h1>John Doe</h1>
-					<p>Architect & Engineer</p>
-					<p>We love that guy</p>
-				  </div>
-				</div>
-			  </div>
-
-
-			  <div class="flip-card">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<img id="blogpics" src="images/gimme.jpg" alt="" />
-				  </div>
-				  <div class="flip-card-back">
-					<h1>John Doe</h1>
-					<p>Architect & Engineer</p>
-					<p>We love that guy</p>
-				  </div>
-				</div>
-			  </div>
-
-			  <div class="flip-card">
-				<div class="flip-card-inner">
-				  <div class="flip-card-front">
-					<img id="blogpics" src="images/minimalist.jpg" alt="" />
-				  </div>
-				  <div class="flip-card-back">
-					<h1>John Doe</h1>
-					<p>Architect & Engineer</p>
-					<p>We love that guy</p>
-				  </div>
-				</div>
-			  </div> -->
-
-			  <!-- <img id="spacer" src="images/gimme.jpg" alt="" /> -->
-
+			
         </div>
+		</main>
 
 		<footer>
 			<p>Check out my instagram @eatsbycfm for some more creations!</p>

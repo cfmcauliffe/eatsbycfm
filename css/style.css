@@ -12,6 +12,23 @@ a{
   color: black;
   text-decoration: none;
 }
+a.skip{
+  background: white;
+  left: 0;
+  padding: 6px;
+  position: absolute;
+  top: -40px;
+  -webkit-transition: top 1s ease-out;
+  transition: top 1s ease-out;
+  z-index: 1;
+}
+
+a.skip:focus{
+  top:20px;
+  color: black;
+  text-decoration-style: solid;
+}
+
 .nav_links{
   padding-top: 20px;
   padding-left: 5px;
@@ -20,12 +37,20 @@ a{
   display: flex;
   flex-basis: auto;
   justify-content: space-between;
+  flex-direction: column;
   
 }
+
+.nav_item:hover{
+  text-decoration: underline;
+}
+
 .active-page{
   font-weight:bold;
-  text-decoration: wavy;
+  /* text-decoration: wavy; */
   font-size: 12pt;
+  border-bottom: 3px solid antiquewhite;
+  
 }
 
 h1{
@@ -52,16 +77,21 @@ p{
 
 .bloggers{
   display:grid;
-  grid-template-columns: 1;
-  grid-template-rows:9 ;
-  justify-content: space-around;
+  /* grid-template-columns: 1fr; */
+  grid-template-rows:1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr ;
+  justify-content: center;
   align-items: center;
   grid-gap: 40px;
-  
-
 }
 
-#blogpics{
+.me{
+  display:grid;
+  justify-content: center;
+  align-items: center;
+  grid-gap: 40px;
+}
+
+.blogpics{
   /* border: 10px white solid; */
   /* margin: 10px; */
   width: 300px;
@@ -75,6 +105,9 @@ p{
   display:flex;
   justify-content: space-around;
   align-items: center;
+}
+.outsidelink:hover{
+  text-decoration: underline;
 
 }
 
@@ -86,6 +119,7 @@ footer{
   text-align: center;
 }
 .sauces{
+  padding-top: 20px;
   display:flex;
   justify-content: space-around;
   align-items: center;
@@ -96,15 +130,18 @@ footer{
 
 
 
-#saucepicture, #blogpics {
+.saucepicture, .blogpics {
   border: 10px white solid;
   margin: 10px;
   width: 300px;
 }
 .recipe{
+  display: grid;
   grid-column: 2;
   grid-row: 2;
+  grid-template-rows: 350px;
   text-align: center;
+  align-items: center;
 }
 ul{
   font-size: 15px;
@@ -185,19 +222,34 @@ form {
       box-sizing: border-box;
     }
 
+    .collage{
+      display: none;
+    }
 
 
 
 
-@media screen and (min-width: 850px){
+/*portrait mode*/
+@media screen and (min-width: 768px){
 
- 
-/*Add media query to handle reduced-motion*/
-/*Your code here again.*/ 
-/* @media screen and (prefers-reduced-motion: reduce){
-} */
+  .bloggers{
+    display:grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:1fr 1fr 1fr 1fr 1fr;
+    justify-content: space-around;
+    align-items: center;
+    
+    padding-left: 20px;
+  }
+  .nav_links{
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    
+    
+  }
+  .collage{
+    height: 83px;
+  }
 
-
-
-/* @media print { 
-} */
+}
