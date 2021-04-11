@@ -249,6 +249,7 @@ form {
     
   }
   .collage{
+    display: inline;
     height: 83px;
   }
 
