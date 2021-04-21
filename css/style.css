@@ -54,12 +54,12 @@ a.skip:focus{
 h1{
   padding-top: 10px;
   padding-bottom: 20px;
-  font-size: 30pt;
+  font-size: 20pt;
   color: black;
   text-align: center ;
 }
 h2{
-  font-size: 24pt;
+  font-size: 15pt;
   color: black;
   text-align: left ;
   padding-left: 5px;
@@ -139,6 +139,7 @@ footer{
   grid-template-rows: 350px;
   text-align: center;
   align-items: center;
+  justify-items: center;
 }
 ul{
   font-size: 15px;
@@ -262,11 +263,10 @@ form {
 @media screen and (min-width: 768px){
 
   a{
-    font-size: 20pt;
+    font-size: 15pt;
   }
   .active-page{
-    font-size: 25pt;
-    border-bottom: 5px solid antiquewhite;
+    font-size: 20pt;
   }
 
   .bloggers{
@@ -295,6 +295,12 @@ form {
     height: 100px;
     object-fit:contain;
   }
+  h1{
+    font-size: 30px;
+  }
+  h2{
+    font-size: 25px;
+  }
 
 }
 @media only screen and (min-width: 992px) {
@@ -306,7 +312,23 @@ form {
   .collage{
     height: 130px;
   }
-
+  .nav_links{
+    padding-right: 75px;
+    padding-left: 75px;
+    font-size: ;
+  }
+  h1{
+    font-size: 60px ;
+  }
+  a{
+    font-size: 20pt;
+  }
+  p,ul{
+    font-size: 20px;
+  }
+  .active-page{
+    font-size: 25pt;
+  }
 
 }
 @media (prefers-reduced-motion: reduce) {
