@@ -15,6 +15,16 @@
 		
 		<title> submission form</title>
 	  </head>
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-195167276-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-195167276-1');
+</script>
+
 <body>
 	<a class = "skip" href="#main">Skip to Main Content</a>
 	<header>
@@ -26,11 +36,12 @@
 			<li class="nav_item"><a href="Form.html"class = "active-page">Suggest a Blogger</a></li>
 		  </ul>
 	  </nav>
+	<div class="parallax"></div>
 	</header>
 	<main>
 		<h1>Suggest your favorite blogger</h1>
 		<p>I'm always looking to hear about more bloggers and try different ideas! Let me know some of you "go-to"s below!</p>
-		<form id=main action= "https://formspree.io/f/xrgrgjnj" method= "POST">
+		<form action= "https://formspree.io/f/xrgrgjnj" method= "POST">
 			<label for="blogger">Blogger Name:</label>
 			<input type="text" id="blogger" name="blogger"><br>
 			<label for="type">What type of blogger are they?</label>
@@ -39,6 +50,7 @@
 			<input type="text" id="recipe" name="recipe"><br>
 			<button type="submit">Send</button>
 		  </form>
+		  <p id="main">Thank you for your suggestions! </p>
 	</main>
 	<footer>
 		<p>Check out my instagram @eatsbycfm for some more creations!</p>

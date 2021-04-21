@@ -19,6 +19,16 @@
 	
 		<title>Favorite Sauces</title>
 	  </head>
+	  <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-195167276-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-195167276-1');
+</script>
+
 <body>
     <a class = "skip" href="#main">Skip to Main Content</a>
     <header>
@@ -35,12 +45,12 @@
 	
 	
 	<main>
-		<h1 id= main>Favorite Sauces</h1>
+		<h1>Favorite Sauces</h1>
 		<div class="sauces">
-			<!-- <img id="saucepicture" src="images/peanut.jpeg" alt="" /> -->
+			
 			<div class="recipe">
-				<img class="saucepicture" src="images/peanut.jpeg" alt="" />
-				<h1>Peanut Sauce</h1>
+				<img class="saucepicture" id= "main" src="images/peanut.jpeg" alt="Picture of bowl with peanut sauce" />
+				<h1 >Peanut Sauce</h1>
 				<p>In a blender mix...</p>
 				<ul>
 					<li>Peanut buttter</li>
@@ -52,7 +62,7 @@
 			</div>
 			<!-- <img id="saucepicture" src="images/taco.jpg" alt="" /> -->
 			<div class="recipe">
-				<img class="saucepicture" src="images/taco.jpg" alt="" />
+				<img class="saucepicture" src="images/taco.jpg" alt="Picture of tacos" />
 				<h1>Avocado Lime Sauce</h1>
 				<p>In a blender mix...</p>
 				<ul>
@@ -66,7 +76,7 @@
 			</div>
 			<!-- <img id="saucepicture" src="images/salad.jpg" alt="" /> -->
 			<div class="recipe">
-				<img class="saucepicture" src="images/salad.jpg" alt="" />
+				<img class="saucepicture" src="images/salad.jpg" alt="Picture of salmon salad" />
 				<h1>Simple Salad Dressing</h1>
 				<p>Whisk in a cup...</p>
 				<ul>
