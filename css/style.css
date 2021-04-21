@@ -313,18 +313,18 @@ form {
   .parallax {
     background-attachment: unset;
   }
-}
-.post-wrap:hover .post {
+  .post-wrap:hover .post {
   transform: rotateY(180deg);
-}
-.post {
-  /* Existing styles here */
-  transition:none;
-  transform-style:none;   
-}
-.me{
-  animation-name: none;
-}
-.food{
-  animation-name: none;
+  }
+  .post {
+    /* Existing styles here */
+    transition:none;
+    transform-style:none;   
+  }
+  .me{
+    animation-name: none;
+  }
+  .food{
+    animation-name: none;
+  }
 }
