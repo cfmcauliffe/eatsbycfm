@@ -349,4 +349,6 @@ form {
   .food{
     animation-name: none;
   }
+  a.skip{
+  transition: none;
 }
