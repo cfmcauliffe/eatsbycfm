@@ -132,6 +132,9 @@ footer{
   margin: 10px;
   width: 300px;
 }
+.saucepicture {
+  align-items: left;
+}
 .recipe{
   display: grid;
   grid-column: 2;
