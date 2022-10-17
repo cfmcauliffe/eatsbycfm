@@ -233,10 +233,10 @@ form {
       background-size: cover;
     }
 
-    .me {
+    /*.me {
       animation-duration: 5s;
       animation-name: slidein;
-    }
+    }*/
     
     @keyframes slidein {
       from {
